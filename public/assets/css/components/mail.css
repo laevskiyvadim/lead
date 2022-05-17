@@ -1,0 +1,398 @@
+.mail__client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  height: 100%;
+  width: calc(100% - 40px);
+}
+
+.mail__left {
+  width: 20%;
+  padding: 30px;
+}
+
+.mail__left .button {
+  margin-bottom: 30px;
+}
+
+.mail__left .button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1cbbff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 10px 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.mail__left .button button img {
+  margin-right: 20px;
+}
+
+.mail__left .search {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.mail__left .search img {
+  position: absolute;
+  max-width: 19px;
+  max-height: 19px;
+  top: 16px;
+  left: 16px;
+}
+
+.mail__left .search input {
+  padding-left: 38px;
+  background: #dfedf2;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  height: 52px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+}
+
+.mail__left .folders .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #c7c7c7;
+  margin-bottom: 20px;
+}
+
+.mail__left .folders .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 28px;
+  margin-bottom: 6px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #a5a5a5;
+}
+
+.mail__left .folders .item .msg {
+  position: absolute;
+  right: 10px;
+  background: #a5a5a5;
+  border-radius: 30px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 3px 13px;
+}
+
+.mail__left .folders .item.active {
+  background: rgba(0, 0, 0, 0.03);
+  color: #1cbbff;
+}
+
+.mail__left .folders .item.active .msg {
+  background: #6cc7ee;
+}
+
+.mail__left .folders .item:hover {
+  background: rgba(0, 0, 0, 0.03);
+  color: #1cbbff;
+}
+
+.mail__left .folders .item:hover .msg {
+  background: #6cc7ee;
+}
+
+.mail__left .folders .item .text {
+  margin-left: 10px;
+}
+
+.mail__left .folders .item img {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+}
+
+.mail__right {
+  width: 78%;
+  height: 70vh;
+}
+
+.mail__right .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 85px;
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.mail__right .title .left__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #a5a5a5;
+}
+
+.mail__right .title .left__title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2em;
+}
+
+.mail__right .title .left__title .text__title {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 49px;
+  color: #202020;
+}
+
+.mail__right .title .left__title .elem {
+  margin-right: 6%;
+}
+
+.mail__right .title .left__title input {
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.mail__right .title .right__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24%;
+  padding-right: 30px;
+}
+
+.mail__right .title .right__title a {
+  margin-left: 12%;
+}
+
+.mail__right .title .right__title.send {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+
+.mail__right .title .right__title.send a {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.mail__right .title .right__title.send span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 24px 5px 16px;
+  background: #FFFFFF;
+  border: 1px solid #F5F5F5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #202020;
+}
+
+.mail__right .title .right__title.send span img {
+  margin-right: 10px;
+}
+
+.mail__right .title .right__title a:last-child img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mail__right .messages {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mail__right .messages .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  min-height: 154px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+}
+
+.mail__right .messages .message input[type="checkbox"] {
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.mail__right .messages .message .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mail__right .messages .message .imgs img {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  margin-right: 14px;
+}
+
+.mail__right .messages .message .message__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mail__right .messages .message .message__title .msg__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mail__right .messages .message .message__title .msg__title .email {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #a5a5a5;
+}
+
+.mail__right .messages .message .message__title .msg__title .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a5a5a5;
+  margin: 0 12px;
+}
+
+.mail__right .messages .message .message__title .msg__title .time {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #a5a5a5;
+}
+
+.mail__right .messages .message .message__title .sub__title {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #202020;
+}
+
+.mail__right .messages .message .message__title .text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #202020;
+}
+
+.mail__right .messages .message .button {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.mail__right .messages .message .button img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/*# sourceMappingURL=mail.css.map */

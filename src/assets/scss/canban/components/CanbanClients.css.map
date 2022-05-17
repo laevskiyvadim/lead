@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC,sBAAsB,CAAC;EACnC,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,aAAa,CAAC,sBAAsB,CAAC,KAAK,CAAC;EACzC,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "CanbanClients.scss"
+    ],
+    "names": [],
+    "file": "CanbanClients.css"
+}

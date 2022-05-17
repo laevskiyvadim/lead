@@ -1,0 +1,172 @@
+.nav li, .nav li a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.nav li .first::before, .nav li .second::before, .nav li .third::before, .nav li .four::before, .nav li .five::before {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.menu__title, .menu__sub__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 100;
+  width: 300px;
+  height: 1241px;
+  background: #ffffff;
+  -webkit-box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+          box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+}
+
+.menu__title {
+  font-family: "Open Sans";
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #c7c7c7;
+  margin-left: 24px;
+}
+
+.menu__sub__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Cairo";
+  line-height: 30px;
+  margin-left: 24px;
+  color: #a5a5a5;
+}
+
+.menu .banner {
+  display: block;
+  margin-left: 24px;
+}
+
+.logo {
+  display: block;
+  margin: 32px 87px 37px 24px;
+}
+
+.logo img {
+  width: 234px;
+  height: 51px;
+}
+
+.nav {
+  margin-left: 24px;
+}
+
+.nav li {
+  margin: 15px 0;
+  font-family: "Cairo";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav li a {
+  padding: 5px 7px 5px 0px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.nav li .gradient:hover,
+.nav li .gradient.active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #5118c3), color-stop(108.62%, #1bf1ff));
+  background: linear-gradient(90deg, #5118c3 50%, #1bf1ff 108.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0b2349;
+  display: table;
+}
+
+.nav li .first::before {
+  content: url("/assets/imgs/clients.svg");
+}
+
+.nav li .second::before {
+  content: url("/assets/imgs/analytics.svg");
+}
+
+.nav li .third::before {
+  content: url("/assets/imgs/mail.svg");
+}
+
+.nav li .four::before {
+  content: url("/assets/imgs/chats.svg");
+}
+
+.nav li .five::before {
+  content: url("/assets/imgs/settings.svg");
+}
+
+.nav li .visible.active {
+  width: 26px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 120px;
+  padding: 4px 8px;
+  background: #5ecfff;
+  border-radius: 30px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.nav .sub__li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.nav__sub {
+  display: none;
+}
+
+.nav__sub.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+}
+
+.nav__sub.active li.active a,
+.nav__sub.active li a:hover {
+  color: #1cbbff;
+}
+/*# sourceMappingURL=menu.css.map */

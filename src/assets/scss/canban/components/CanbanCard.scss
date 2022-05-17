@@ -1,0 +1,137 @@
+.canban__body .canban__body__columns .card__title {
+  border-radius: 14px 14px 0px 0px;
+  padding: 1em;
+  min-height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.canban__body .canban__body__columns .card__title .text {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 37px;
+  color: #202020;
+}
+
+.canban__body .canban__body__columns .card .items__can {
+  display: flex;
+  flex-direction: column;
+}
+
+.canban__body .canban__body__columns .card:nth-child(1) .card__title {
+  background: #d5d9ff;
+}
+
+.canban__body .canban__body__columns .card:nth-child(1) .card__title .plus {
+  background: #1cadff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+}
+
+.canban__body .canban__body__columns .card:nth-child(1) .card__title .plus a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.canban__body .canban__body__columns .card .items__can .item:first-child {
+  margin-top: 26px;
+}
+
+.canban__body .canban__body__columns .card:nth-child(2) .card__title {
+  background: #cff1ff;
+}
+
+.canban__body .canban__body__columns .card:nth-child(2) .card__title .plus {
+  background: rgba(79, 243, 254, 0.26);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+}
+
+.canban__body .canban__body__columns .card:nth-child(2) .card__title .plus a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.canban__body .canban__body__columns .card:nth-child(3) .card__title {
+  background: #ffd5d5;
+}
+
+.canban__body .canban__body__columns .card:nth-child(3) .card__title .plus {
+  background: rgba(79, 243, 254, 0.26);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+}
+
+.canban__body .canban__body__columns .card:nth-child(3) .card__title .plus a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.canban__body .canban__body__columns .card:nth-child(4) .card__title {
+  background: #e7ffdc;
+}
+
+.canban__body .canban__body__columns .card:nth-child(4) .card__title .plus {
+  background: rgba(79, 243, 254, 0.26);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+}
+
+.canban__body .canban__body__columns .card:nth-child(4) .card__title .plus a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.canban__body .canban__body__columns .card .items__can .item__add {
+  background: #f5f5f5;
+  border: 2px dashed #c2c2c2;
+  box-sizing: border-box;
+  border-radius: 14px;
+  width: 100%;
+}
+
+.canban__body .canban__body__columns .card .items__can .item__add a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #717171;
+  text-decoration: none;
+  height: 67px;
+}

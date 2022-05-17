@@ -1,0 +1,220 @@
+%jcctac {
+    justify-content: left;
+    text-align: left;
+}
+
+%td {
+    &:nth-child(1) {
+        justify-content: center;
+        text-align: center;
+        width: 5%;
+    }
+    &:nth-child(2) {
+        @extend %jcctac;
+        width: 20%;
+    }
+    &:nth-child(3) {
+        @extend %jcctac;
+        width: 15%;
+    }
+    &:nth-child(4) {
+        @extend %jcctac;
+        width: 20%;
+    }
+    &:nth-child(5) {
+        @extend %jcctac;
+        width: 20%;
+    }
+    &:nth-child(6) {
+        @extend %jcctac;
+        width: 20%;
+    }
+}
+
+%tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    height: 90px;
+    font-family: "Cairo";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #202020;
+}
+
+.table.tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .thead {
+        display: flex;
+        .tr {
+            @extend %tr;
+            border-radius: 14px 14px 0px 0px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 37px;
+            color: #000000;
+            .td {
+                @extend %td;
+                font-weight: 700;
+            }
+        }
+    }
+    .tbody {
+        display: flex;
+        flex-direction: column;
+        .tr {
+            @extend %tr;
+            margin-top: 5px;
+            .td {
+                @extend %td;
+                &:nth-child(2) {
+                    font-family: "Cairo";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.01em;
+                    color: #202020;
+                }
+                &:nth-child(3) {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .el {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 46px;
+                        height: 40px;
+                        border: 2px solid #FFFFFF;
+                        border-radius: 50%;
+                        font-family: "Cairo";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 34px;
+                        color: #FFFFFF;
+                        &:nth-child(1) {
+                            background: #6930B1;
+                            position: absolute;
+                            z-index: 1;
+                            left: 0;
+                        }
+                        &:nth-child(2) {
+                            background: #3DA42C;
+                            position: absolute;
+                            z-index: 2;
+                            left: 35px;
+                        }
+                        &:nth-child(3) {
+                            background: #1CBBFF;
+                            position: absolute;
+                            z-index: 3;
+                            left: 70px;
+                        }
+                    }
+                    a {
+                        width: 36px;
+                        height: 32px;
+                        background: #1CADFF;
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+                        border-radius: 14px;
+                        text-decoration: none;
+                        position: absolute;
+                        left: 120px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+                &:nth-child(4) {
+                    font-family: "Open Sans";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #161616;
+                }
+                &:nth-child(5) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    font-family: "Cairo";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.01em;
+                    color: #202020;
+                    .el {
+                        margin-right: 13px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 46px;
+                        height: 40px;
+                        border: 2px solid #FFFFFF;
+                        border-radius: 50%;
+                        font-family: "Cairo";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 34px;
+                        color: #FFFFFF;
+                        background: #1CBBFF;
+                    }
+                }
+                &:nth-child(6) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    %xx {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px;
+                        width: 150px;
+                        height: 49px;
+                        border-radius: 14px;
+                        font-family: "Open Sans";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-right: 40px;
+                    }
+                    .hot {
+                        @extend %xx;
+                        background: rgba(216, 0, 39, 0.63);
+                        color: #FFFFFF;
+                    }
+                    .medium {
+                        @extend %xx;
+                        background: #FFEBCC;
+                        color: #FFAB2D;
+                    }
+                    .low {
+                        @extend %xx;
+                        background: #DFEDF2;
+                        color: #34A8D9;
+                    }
+                }
+            }
+            &:hover {
+                background: #ffffff;
+                box-shadow: 0px 1px 28px rgba(0, 0, 0, 0.12);
+                border-radius: 1px;
+            }
+        }
+    }
+}

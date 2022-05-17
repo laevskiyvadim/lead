@@ -1,0 +1,281 @@
+.table .tasks .thead .tr .td:nth-child(2), .table .tasks .tbody .tr .td:nth-child(2), .table .tasks .thead .tr .td:nth-child(3), .table .tasks .tbody .tr .td:nth-child(3), .table .tasks .thead .tr .td:nth-child(4), .table .tasks .tbody .tr .td:nth-child(4), .table .tasks .thead .tr .td:nth-child(5), .table .tasks .tbody .tr .td:nth-child(5), .table .tasks .thead .tr .td:nth-child(6), .table .tasks .tbody .tr .td:nth-child(6) {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+.table .tasks .thead .tr .td:nth-child(1), .table .tasks .tbody .tr .td:nth-child(1) {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 5%;
+}
+
+.table .tasks .thead .tr .td:nth-child(2), .table .tasks .tbody .tr .td:nth-child(2) {
+  width: 20%;
+}
+
+.table .tasks .thead .tr .td:nth-child(3), .table .tasks .tbody .tr .td:nth-child(3) {
+  width: 15%;
+}
+
+.table .tasks .thead .tr .td:nth-child(4), .table .tasks .tbody .tr .td:nth-child(4) {
+  width: 20%;
+}
+
+.table .tasks .thead .tr .td:nth-child(5), .table .tasks .tbody .tr .td:nth-child(5) {
+  width: 20%;
+}
+
+.table .tasks .thead .tr .td:nth-child(6), .table .tasks .tbody .tr .td:nth-child(6) {
+  width: 20%;
+}
+
+.table .tasks .thead .tr, .table .tasks .tbody .tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  height: 90px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #202020;
+}
+
+.table .tasks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table .tasks .thead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table .tasks .thead .tr {
+  border-radius: 14px 14px 0px 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.table .tasks .tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table .tasks .tbody .tr {
+  margin-top: 5px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 3%;
+}
+
+.table .tasks .tbody .tr .td:nth-child(2) .img {
+  border-radius: 14px;
+  width: 54.54px;
+  height: 49px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(2) .text__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.table .tasks .tbody .tr .td:nth-child(2) .text__name {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.table .tasks .tbody .tr .td:nth-child(3) .task__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.table .tasks .tbody .tr .td:nth-child(3) .task__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #D80027;
+}
+
+.table .tasks .tbody .tr .td:nth-child(4) .mail a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  /* Black */
+  color: #202020;
+}
+
+.table .tasks .tbody .tr .td:nth-child(4) .mail a img {
+  margin-right: 8px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(4) .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 9px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(4) .phone a:nth-child(1),
+.table .tasks .tbody .tr .td:nth-child(4) .phone a:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F6EEFF;
+  border-radius: 12px;
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(4) .phone a:nth-child(1) img,
+.table .tasks .tbody .tr .td:nth-child(4) .phone a:nth-child(2) img {
+  height: 14px;
+  width: 12px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(4) .phone a:nth-child(3) {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.table .tasks .tbody .tr .td:nth-child(5) {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6418C3;
+}
+
+.table .tasks .tbody .tr .td:nth-child(6) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.table .tasks .tbody .tr .td:nth-child(6) .hot, .table .tasks .tbody .tr .td:nth-child(6) .medium, .table .tasks .tbody .tr .td:nth-child(6) .low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  width: 150px;
+  height: 49px;
+  border-radius: 14px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  margin-right: 40px;
+}
+
+.table .tasks .tbody .tr .td:nth-child(6) .hot {
+  background: rgba(216, 0, 39, 0.63);
+  color: #FFFFFF;
+}
+
+.table .tasks .tbody .tr .td:nth-child(6) .medium {
+  background: #FFEBCC;
+  color: #FFAB2D;
+}
+
+.table .tasks .tbody .tr .td:nth-child(6) .low {
+  background: #DFEDF2;
+  color: #34A8D9;
+}
+
+.table .tasks .tbody .tr:hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 28px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 28px rgba(0, 0, 0, 0.12);
+  border-radius: 1px;
+}
+/*# sourceMappingURL=tasks.css.map */

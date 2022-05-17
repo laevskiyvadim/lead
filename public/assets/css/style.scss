@@ -1,0 +1,27 @@
+@import 'reset.scss';
+$FF:"Cairo";
+body {
+    font-family: $FF;
+    display: flex;
+    background: #F9F9F9;
+}
+
+main {
+    position: relative;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+@import "./components/header.scss";
+@import "./components/menu.scss";
+@import './components/clients_settings.scss';
+@import './components/chats.scss';
+@import './components/settings.scss';
+@import './components/mail.scss';
+@import './components/list__persons.scss';
+@import './components/client_tasks.scss';
+@import './components/client_list.scss';
+@import './components/robots.scss';
+@import './components/canban.scss';
+@import './components/popups.scss';
+@import './components/footer.scss';
