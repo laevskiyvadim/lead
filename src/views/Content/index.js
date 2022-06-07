@@ -24,7 +24,7 @@ export const Content = defineComponent({
     });
 
     onUnmounted(() => {
-      window.removeEventListener("resize");
+      window.removeEventListener("resize", resize);
     });
 
     const mainCls = () =>
