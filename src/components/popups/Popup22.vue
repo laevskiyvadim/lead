@@ -127,12 +127,10 @@ export default {
   justify-content: center;
   align-items: center;
 }
-
 body.popupBody {
   overflow-x: scroll;
   overflow-y: scroll;
 }
-
 .popupBody {
   width: 802px;
   min-height: 600px;
@@ -143,7 +141,6 @@ body.popupBody {
     padding: 0 40px;
     box-sizing: border-box;
   }
-
   .body {
     .date {
       display: flex;

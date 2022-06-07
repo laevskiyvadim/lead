@@ -1,0 +1,16 @@
+.canban {
+  margin: 0 20px;
+}
+main {
+  position: relative;
+  left: 320px;
+  width: calc(100% - 320px);
+}
+main.active {
+  position: relative;
+  left: 45px;
+  width: calc(100% - 45px);
+}
+.no-move {
+  overflow-y: hidden;
+}

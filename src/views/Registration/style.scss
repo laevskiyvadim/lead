@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  div {
+    display: flex;
+    min-width: 300px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  button {
+    margin-top: 20px;
+  }
+}

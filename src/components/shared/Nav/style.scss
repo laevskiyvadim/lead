@@ -1,0 +1,49 @@
+.nav {
+  list-style: none;
+  padding: 0;
+}
+.menu {
+  position: fixed;
+  display: grid;
+  width: 320px;
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #ffffff;
+  -webkit-box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+  box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
+  grid-template-rows: 97px 72px 1fr;
+}
+.menu.active {
+  width: 45px;
+  display: grid;
+}
+.menu.active .menu__title {
+  visibility: hidden;
+}
+.menu.active .menu__sub__title {
+  display: none;
+}
+.menu__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 20px 0 30px 50px;
+  color: #c7c7c7;
+}
+.menu__sub__title {
+  display: flex;
+  align-items: center;
+  font-family: "Cairo";
+  line-height: 30px;
+  margin: 0;
+  padding: 10px 0 10px 50px;
+  color: #a5a5a5;
+}
+.menu__sub__title svg {
+  margin-left: 15px;
+}

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC,sBAAsB,CAAC,KAAK,CAAC,WAAW,CAAC,KAAK,CAAC;EAC3D,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAmB;EAC3C,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CACd",
-    "sources": [
-        "CanbanCardFree.scss"
-    ],
-    "names": [],
-    "file": "CanbanCardFree.css"
-}

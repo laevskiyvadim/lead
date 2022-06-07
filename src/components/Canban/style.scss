@@ -1,0 +1,8 @@
+.canban__body__columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  .card {
+    width: 24%;
+  }
+}

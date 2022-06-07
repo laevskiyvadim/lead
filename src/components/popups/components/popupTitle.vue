@@ -16,5 +16,5 @@ export default {
 };
 </script>
 <style scoped>
-@import "../../../assets/scss/popups/components/title.css";
+@import "./style.scss";
 </style>

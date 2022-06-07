@@ -1,0 +1,11 @@
+.prelogin {
+  display: flex;
+  flex-direction: row !important;
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  a.active {
+    color: red;
+  }
+}
