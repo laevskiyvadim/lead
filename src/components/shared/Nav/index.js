@@ -67,6 +67,7 @@ export const Nav = defineComponent({
         </svg>
       </p>
     );
+
     const ul = () =>
       h(
         <ul class="nav">
@@ -79,6 +80,7 @@ export const Nav = defineComponent({
           })}
         </ul>
       );
+
     const linkOrSubLinks = (link) =>
       h(
         link.items ? (
@@ -87,6 +89,7 @@ export const Nav = defineComponent({
           <Link link={link} />
         )
       );
+
     const liCls = ({ items }) => {
       return {
         sub__li: items != null ? true : false,
@@ -94,13 +97,10 @@ export const Nav = defineComponent({
       };
     };
 
-    const navCls = ({ value }) => {
-      return { menu: true, active: value };
-    };
 
     return () =>
       h(
-        <nav class={navCls(menuActive)}>
+        <nav class={['menu', { active: menuActive.value }]}>
           <Logo toggleMenu={toggleMenu} />
           <div class="menu__title">Меню CRM</div>
           {ul()}

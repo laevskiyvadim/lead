@@ -15,9 +15,11 @@ export const Content = defineComponent({
     const blockToggle = ref(false);
 
     const resize = function () {
-      if (window.innerWidth > 1250) blockToggle.value = false;
-      else blockToggle.value = true;
+      (window.innerWidth > 1250)
+        ? blockToggle.value = false
+        : blockToggle.value = true;
     };
+
     onMounted(() => {
       window.addEventListener("resize", resize);
       resize();
@@ -27,14 +29,18 @@ export const Content = defineComponent({
       window.removeEventListener("resize", resize);
     });
 
-    const mainCls = () =>
-      mainActive.value || blockToggle.value ? "active" : "";
+    const mainCls = computed(() => {
+      return mainActive.value || blockToggle.value ? "active" : "";
+    })
+
     const toggleMain = () => {
+      console.log(blockToggle.value)
       if (!blockToggle.value) mainActive.value = !mainActive.value;
     };
 
     const popupCondition = computed(() => Object.keys(state.popup).length);
-    const noMove = () => (popupCondition.value ? "no-move" : "");
+
+
     const closePopup = () => {
       document.querySelector("body").classList.remove("noMove");
       commit("set_popup", {});
@@ -42,19 +48,17 @@ export const Content = defineComponent({
 
     return () =>
       h(
-        <div>
-          <div class={noMove}>
-            <Nav mainToggle={toggleMain} menuActive={!!mainCls()} />
-            <main class={mainCls()}>
-              <Header />
-              <div class="canban">
-                <CanbanSettings />
-                <router-view></router-view>
-              </div>
-            </main>
-            {popupCondition.value ? <Popup22 closePopup={closePopup} /> : ""}
-          </div>
-        </div>
+        <>
+          <Nav mainToggle={toggleMain} menuActive={!!mainCls.value} />
+          <main class={mainCls.value}>
+            <Header />
+            <div class="canban">
+              <CanbanSettings />
+              <router-view></router-view>
+            </div>
+          </main>
+          {popupCondition.value ? <Popup22 closePopup={closePopup} /> : ""}
+        </>
       );
   },
 });

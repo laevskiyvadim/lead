@@ -16,9 +16,7 @@ export const Login = defineComponent({
       const { dispatch } = store;
       const { push } = router;
 
-      await dispatch("login", data).then(() => {
-        push({ name: "Canban" });
-      });
+      await dispatch("login", data).then(() => { push({ name: "Canban" }) });
     };
 
     const onChangeInput = (e, name) => {

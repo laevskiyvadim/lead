@@ -26,10 +26,10 @@ export const Canban = defineComponent({
       };
       return value.length
         ? value.reduce((acc, el) => {
-            const { stageOfExecution } = el;
-            acc[stageOfExecution].items.push(el);
-            return acc;
-          }, acc)
+          const { stageOfExecution } = el;
+          acc[stageOfExecution].items.push(el);
+          return acc;
+        }, acc)
         : acc;
     });
 

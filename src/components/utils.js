@@ -32,7 +32,9 @@ export const setData = (prop, data, len) => {
 
 export const openEditPopup = (e, store, item) => {
   const { commit } = store;
+  const { value } = item
   e.preventDefault();
+
   document.querySelector("body").classList.add("noMove");
-  commit("set_popup", item.value);
+  commit("set_popup", value ? value : item);
 };
