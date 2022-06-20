@@ -43,8 +43,9 @@
   text-decoration: none;
 }
 
-.canban__body .canban__body__columns .card .items__can .item:first-child {
+.canban__body .canban__body__columns .card .items__can .item {
   margin-top: 26px;
+  width: auto;
 }
 
 .canban__body .canban__body__columns .card:nth-child(2) .card__title {

@@ -10,7 +10,7 @@ export const Link = defineComponent({
       h(
         <>
           <span class="icon" class={link.value.class}></span>
-          <router-link to={link.value.url} tag="a" class="link">
+          <router-link to={link.value.url} tag="a" class="sub_link">
             {link.value.title}
           </router-link>
         </>

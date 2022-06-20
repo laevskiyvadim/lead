@@ -4,12 +4,12 @@
 main {
   position: relative;
   left: 320px;
-  width: calc(100% - 320px);
+  width: calc(100% - 340px);
 }
 main.active {
   position: relative;
   left: 45px;
-  width: calc(100% - 45px);
+  width: calc(100% - 65px);
 }
 .no-move {
   overflow-y: hidden;

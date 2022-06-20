@@ -32,7 +32,7 @@ export const setData = (prop, data, len) => {
 
 export const openEditPopup = (e, store, item) => {
   const { commit } = store;
-  const { value } = item
+  const { value } = item;
   e.preventDefault();
 
   document.querySelector("body").classList.add("noMove");

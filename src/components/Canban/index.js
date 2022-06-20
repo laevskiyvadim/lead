@@ -9,12 +9,9 @@ export const Canban = defineComponent({
     const store = useStore();
     const { state, dispatch } = store;
     const obj = ref({});
-    onBeforeMount(async () => {
-      await dispatch("getTasks");
-    });
-    const tasks = computed(() => {
-      return state.tasks;
-    });
+
+    onBeforeMount(async () => { await dispatch("getTasks") });
+    const tasks = computed(() => { return state.tasks });
 
     const canban = computed(() => {
       const { value } = tasks;
@@ -33,7 +30,7 @@ export const Canban = defineComponent({
         : acc;
     });
 
-    const startDrag = (item) => (obj.value = item);
+    const startDrag = (item) => { obj.value = item };
 
     const changeCols = async ({ itemId, nameStart, nameEnd }) => {
       console.log(itemId, nameStart, nameEnd, obj.value);

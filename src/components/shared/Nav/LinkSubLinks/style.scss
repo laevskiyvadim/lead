@@ -134,5 +134,7 @@
 }
 
 .nav li.sub__li.active .nav__sub {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
